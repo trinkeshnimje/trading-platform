@@ -9,7 +9,12 @@ const authRoute = require("./routes/AuthRoute");
 const app = express();
 
 app.use(cors({
-  origin: ["http://localhost:3000", "http://localhost:5173"],
+  origin: [
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "https://trading-platform-frontend-d5df.onrender.com",
+    "https://trading-platform-dashboard-xxxx.onrender.com"
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 }));
